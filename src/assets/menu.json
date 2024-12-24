@@ -1,0 +1,257 @@
+{
+  "categories": [
+    {
+      "name": "Kebabs",
+      "id": 1,
+      "category_description": "Grilled meats on skewers, seasoned with aromatic spices.",
+      "items": [
+        {
+          "name": "Chicken Kebab",
+          "description": "Tender pieces of chicken marinated in a flavorful blend of spices and grilled to perfection.",
+          "prices": {
+            "small": 7.99,
+            "large": 11.99
+          }
+        },
+        {
+          "name": "Lamb Kebab",
+          "description": "Succulent lamb skewers, spiced with traditional herbs and grilled to a juicy finish.",
+          "prices": {
+            "small": 9.99,
+            "large": 13.99
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sizzler Kebabs",
+      "category_description": "Sizzling hot kebabs served on a cast iron platter with a side of vegetables.",
+      "items": [
+        {
+          "name": "Chicken Sizzler Kebab",
+          "description": "Grilled chicken skewers served on a hot sizzling platter with sautéed veggies.",
+          "prices": {
+            "small": 10.99,
+            "large": 14.99
+          }
+        },
+        {
+          "name": "Beef Sizzler Kebab",
+          "description": "Beef kebabs served on a sizzling platter, with grilled vegetables and a savory sauce.",
+          "prices": {
+            "small": 12.99,
+            "large": 16.99
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pizza",
+      "category_description": "Freshly baked pizzas with a variety of toppings and delicious sauces.",
+      "items": [
+        {
+          "name": "Margherita Pizza",
+          "description": "Classic pizza with mozzarella, fresh basil, and a tangy tomato sauce.",
+          "prices": {
+            "small": 6.99,
+            "large": 9.99
+          }
+        },
+        {
+          "name": "Pepperoni Pizza",
+          "description": "A savory pizza topped with pepperoni slices and melted cheese.",
+          "prices": {
+            "small": 7.99,
+            "large": 11.99
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Burgers",
+      "category_description": "Juicy, flavorful burgers served with fresh buns and crispy toppings.",
+      "items": [
+        {
+          "name": "Cheeseburger",
+          "description": "A classic beef patty topped with cheddar cheese, lettuce, tomato, and pickles.",
+          "prices": {
+            "small": 5.99,
+            "large": 8.99
+          }
+        },
+        {
+          "name": "Veggie Burger",
+          "description": "A plant-based patty with fresh veggies and a tangy sauce.",
+          "prices": {
+            "small": 6.49,
+            "large": 9.49
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Extras",
+      "category_description": "A variety of side dishes and snacks to complement your meal.",
+      "items": [
+        {
+          "name": "Fries",
+          "description": "Golden, crispy fries, seasoned with salt.",
+          "prices": {
+            "small": 2.99,
+            "large": 4.99
+          }
+        },
+        {
+          "name": "Onion Rings",
+          "description": "Crispy onion rings with a savory batter, served with dipping sauce.",
+          "prices": {
+            "small": 3.49,
+            "large": 5.49
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Main Course",
+      "category_description": "Hearty and filling meals that make the perfect main course.",
+      "items": [
+        {
+          "name": "Chicken Curry",
+          "description": "Tender chicken pieces cooked in a rich and aromatic curry sauce.",
+          "prices": {
+            "small": 9.99,
+            "large": 14.99
+          }
+        },
+        {
+          "name": "Vegetable Biryani",
+          "description": "Fragrant rice cooked with a blend of spices and mixed vegetables.",
+          "prices": {
+            "small": 8.99,
+            "large": 12.99
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Desi Karahi & Balties",
+      "category_description": "Traditional dishes cooked in a wok-like pan, offering bold and spicy flavors.",
+      "items": [
+        {
+          "name": "Chicken Karahi",
+          "description": "A spicy chicken curry cooked with tomatoes, green chilies, and fresh ginger.",
+          "prices": {
+            "small": 10.99,
+            "large": 15.99
+          }
+        },
+        {
+          "name": "Lamb Balti",
+          "description": "Tender lamb cooked in a spicy and aromatic sauce, served in a traditional Balti pan.",
+          "prices": {
+            "small": 12.99,
+            "large": 17.99
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Milk Shakes",
+      "category_description": "Creamy milkshakes made with premium ice cream and topped with delicious flavors.",
+      "items": [
+        {
+          "name": "Chocolate Milkshake",
+          "description": "Rich and creamy milkshake made with chocolate ice cream and topped with whipped cream.",
+          "prices": {
+            "small": 4.99,
+            "large": 6.99
+          }
+        },
+        {
+          "name": "Strawberry Milkshake",
+          "description": "A refreshing milkshake made with fresh strawberries and creamy vanilla ice cream.",
+          "prices": {
+            "small": 4.49,
+            "large": 6.49
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Cold Drinks",
+      "category_description": "Refreshing cold drinks to complement your meal.",
+      "items": [
+        {
+          "name": "Coca Cola",
+          "description": "Classic Coca Cola, served chilled.",
+          "prices": {
+            "small": 1.99,
+            "large": 2.99
+          }
+        },
+        {
+          "name": "Sprite",
+          "description": "Crisp and refreshing lemon-lime soda.",
+          "prices": {
+            "small": 1.89,
+            "large": 2.89
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Rice / Biryani",
+      "category_description": "A variety of rice dishes, including flavorful biryanis and rice-based meals.",
+      "items": [
+        {
+          "name": "Chicken Biryani",
+          "description": "Aromatic rice cooked with chicken, spices, and herbs.",
+          "prices": {
+            "small": 9.49,
+            "large": 13.49
+          }
+        },
+        {
+          "name": "Mutton Biryani",
+          "description": "Fragrant rice cooked with tender mutton, seasoned with spices and herbs.",
+          "prices": {
+            "small": 10.99,
+            "large": 14.99
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Gelato Ice Cream",
+      "category_description": "Creamy Italian-style ice cream with a variety of refreshing flavors.",
+      "items": [
+        {
+          "name": "Vanilla Gelato",
+          "description": "Smooth and creamy gelato with a rich vanilla flavor.",
+          "prices": {
+            "small": 3.99,
+            "large": 5.49
+          }
+        },
+        {
+          "name": "Chocolate Gelato",
+          "description": "Decadent chocolate gelato made with high-quality cocoa.",
+          "prices": {
+            "small": 4.49,
+            "large": 6.49
+          }
+        }
+      ]
+    }
+  ]
+}

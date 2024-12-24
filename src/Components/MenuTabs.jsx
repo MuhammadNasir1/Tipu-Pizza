@@ -49,7 +49,7 @@ const CategoryCarousel = () => {
             <a
               href={"#" + category}
               key={index}
-              className=" max-w-full whitespace-nowrap bg-primary text-white  rounded-md shadow-md p-4 text-center  font-semibold hover:bg-red-600 transition"
+              className=" max-w-full whitespace-nowrap bg-primary text-white  rounded-md custom-shadow p-4 text-center  font-semibold hover:bg-red-600 transition"
             >
               {category}
             </a>

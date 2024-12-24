@@ -44,9 +44,9 @@ function Footer() {
         <p className="text-[15px] leading-loose text-white font-semibold">© Tipu Pizza Kebab . All rights reserved.</p>
 
         <ul className="flex space-x-6 gap-y-2 max-lg:justify-center flex-wrap">
-          <li><a href="javascript:void(0)" className="text-[15px] text-white  font-semibold">Terms of Service</a></li>
-          <li><a href="javascript:void(0)" className="text-[15px] text-white  font-semibold">Privacy Policy</a></li>
-          <li><a href="javascript:void(0)" className="text-[15px] text-white  font-semibold">Contact</a></li>
+          <li><a href="" className="text-[15px] text-white  font-semibold">Terms of Service</a></li>
+          <li><a href="" className="text-[15px] text-white  font-semibold">Privacy Policy</a></li>
+          <li><a href="" className="text-[15px] text-white  font-semibold">Contact</a></li>
         </ul>
       </div>
     </footer>

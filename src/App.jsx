@@ -4,13 +4,15 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import MenuTabs from "./Components/MenuTabs";
 import About from "./Components/AboutSection";
+import MenuHeading from "./Components/MenuHeading";
 
 function App() {
   return (
 <>
 <Navbar />
 <Hero />
-<MenuTabs />
+{/* <MenuTabs />   */}
+<MenuHeading />
 <About  />
 <Footer />
 </>

@@ -5,10 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
+    scroll-behavior: smooth;
 }
 
 .scrollbar-hide{
 
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.custom-shadow{
+    box-shadow: 1px 1px 10px #6160602C;
 }
