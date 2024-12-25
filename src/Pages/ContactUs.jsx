@@ -7,8 +7,9 @@ function ContactUs() {
   return (
     <>
       <Navbar />
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 py-20 max-w-8xl mx-auto ">
-        <div className="grid grid-cols-2 gap-4">
+      <div className=" lg:grid grid-cols-1 flex flex-col  lg:grid-cols-2 gap-8 py-20 max-w-8xl lg:mx-auto px-4">
+        <div className="w-full">
+        <div className="md:grid flex flex-col md:grid-cols-2 grid-cols-1 gap-4 w-full">
           <div className="border-4 border-primary flex flex-col justify-center items-center py-6 px-2 rounded-lg">
             <div className="h-24 w-24 text-white text-[50px] rounded-full bg-primary flex justify-center items-center">
               <IoLocationSharp />
@@ -42,6 +43,7 @@ function ContactUs() {
               title="Google Map"
             ></iframe>
           </div>
+        </div>
         </div>
 
         <div className="form">

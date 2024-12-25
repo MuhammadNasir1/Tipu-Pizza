@@ -5,10 +5,42 @@ import {
     FaInstagram,
  
   } from "react-icons/fa";
+  import { IoIosArrowUp } from "react-icons/io";
+  import { useState, useEffect } from 'react';
 function Footer() {
-  return (
+    const [isVisible, setIsVisible] = useState(false);
+
+  // Show or hide the button based on scroll position
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  // Scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Smooth scrolling effect
+    });
+  };
+    return (
  
  <>
+  isVisible && (
+      <div
+        className="fixed bottom-10 right-8 bg-primary h-20 w-20 rounded-full flex justify-center items-center text-white text-4xl font-bold cursor-pointer shadow-lg"
+        onClick={scrollToTop}
+      >
+        <IoIosArrowUp />
+      </div>
        <div className="bg-primary text-white py-2 px-4">
             <div className="flex justify-between items-center  ">
               <span className="text-xl font-semibold">Tipu Pizza  Kebab</span>
