@@ -1,9 +1,8 @@
 import { useState } from "react";
 import {
   FaFacebookF,
-  FaTwitter,
+  FaTiktok,
   FaInstagram,
-  FaLinkedinIn,
   FaShoppingCart,
 } from "react-icons/fa";
 import logo from "../assets/img/logo.png";
@@ -17,33 +16,27 @@ const Navbar = () => {
           <span className="text-xl font-semibold">Tipu Pizza  Kebab</span>
           <div className="flex gap-6">
             <a className="text-2xl"
-              href="https://facebook.com"
+              href="https://www.facebook.com/TipuPizzaKebab"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaFacebookF  />
             </a>
             <a className="text-2xl"
-              href="https://twitter.com"
+              href="https://www.tiktok.com/@tipupizzakebab"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter  />
+              <FaTiktok  />
             </a>
             <a className="text-2xl"
-              href="https://instagram.com"
+              href="https://www.instagram.com/tipupizzakebab/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram  />
             </a>
-            <a className="text-2xl"
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn  />
-            </a>
+           
           </div>
         </div>
       </div>
@@ -65,19 +58,19 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="menu"
+              to="../menu"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               Menu
             </Link>
-            <Link
-              to="about"
+            {/* <Link
+              to="../about"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               About Us
-            </Link>
+            </Link> */}
             <Link
-              to="contact"
+              to="../contact"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               Contact
@@ -132,12 +125,12 @@ const Navbar = () => {
             >
               Menu
             </Link>
-            <Link
+            {/* <Link
               to="about"
               className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
               About Us
-            </Link>
+            </Link> */}
             <Link
               to="contact"
               className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-primary"

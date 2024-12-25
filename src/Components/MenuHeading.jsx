@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import bg from "../assets/img/lg.svg";
 import categoriesData from "../assets/menu.json";
 import defaultImg from "../assets/img/default.jpg";
 
@@ -55,7 +54,7 @@ function MenuHeading() {
         <div className="relative">
           <button
             onClick={scrollLeft}
-            className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 bg-black flex justify-center items-center text-white p-2 h-8 w-8 rounded-full shadow-md hover:bg-gray-700 text-2xl"
+            className="absolute -left-6 top-1/2 transform -translate-y-1/2 z-10 bg-black flex justify-center items-center text-white p-2 h-8 w-8 rounded-full shadow-md hover:bg-gray-700 text-2xl"
           >
             &#8249;
           </button>
@@ -67,15 +66,20 @@ function MenuHeading() {
               <a
                 href={"#" + category.name}
                 key={index}   onClick={() => handleCategoryClick(category.id)}
-                className=" max-w-full whitespace-nowrap bg-primary text-white  rounded-md custom-shadow p-4 text-center  font-semibold hover:bg-red-600 transition"
+                className=" max-w-full whitespace-nowrap bg-primary text-white flex flex-col justify-center flex-shrink-0 items-center rounded-md custom-shadow py-4 px-8 text-center  font-semibold hover:bg-red-600 transition"
               >
+                 <img
+                        className="w-16 h-16 object-cover mb-2 rounded-full border-primary"  
+                        src={defaultImg}
+                        alt="menu"
+                      />
                 {category.name}
               </a>
             ))}
           </div>
           <button
             onClick={scrollRight}
-            className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-10 bg-black flex justify-center items-center text-white p-2 h-8 w-8 rounded-full shadow-md hover:bg-gray-700 text-2xl"
+            className="absolute -right-6 top-1/2 transform -translate-y-1/2 z-10 bg-black flex justify-center items-center text-white p-2 h-8 w-8 rounded-full shadow-md hover:bg-gray-700 text-2xl"
           >
             &#8250;
           </button>
@@ -87,10 +91,14 @@ function MenuHeading() {
         {categories.map((category, index) => (
           <section key={index} id={category.id} className="w-full">
             <div className="relative flex justify-center items-center flex-col">
-              <h2 className="text-white font-semibold absolute top-1/5 left-1/5 -translate-x-1/5 -translate-y-1/5  text-xl">
+              <h2 className="text-white font-semibold  bg-primary px-8 py-2 rounded-md   text-xl">
                 {category.name}
               </h2>
-              <img className="" src={bg} alt="bg" />
+
+              {/* <h2 className="text-white font-semibold absolute top-1/5 left-1/5 -translate-x-1/5 -translate-y-1/5  text-xl">
+                {category.name}
+              </h2>
+              <img className="" src={bg} alt="bg" /> */}
             </div>
             <div>
               <p className="my-2 text-gray-400 text-center ">
@@ -115,11 +123,13 @@ function MenuHeading() {
                         <div className="flex lg:flex-row flex-col   lg:gap-4 lg:justify-between   w-full">
                           <h3 className="text-lg font-semibold">{item.name}</h3>
                           <div className="flex gap-4 justify-end">
-                            <h2 className="font-semibold text-lg text-black">
-                              £ {item.prices.small}
+                            <h2 className="font-semibold text-lg text-black relative flex justify-center">
+                              £ {item.prices.small}<span className="  absolute font-semibold -top-5">S</span>
                             </h2>
-                            <h2 className="font-semibold text-lg text-primary">
+                            <h2 className="font-semibold text-lg text-primary relative flex justify-center">
                               £ {item.prices.large}
+                             <span className="text-primary  absolute font-semibold -top-5">L</span>
+
                             </h2>
                           </div>
                         </div>

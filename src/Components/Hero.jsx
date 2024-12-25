@@ -1,4 +1,4 @@
-import bg from "../assets/img/here-bg.png";
+import bg from "../assets/img/hero-banner.jpg";
 const HeroSection = () => {
   return (
     <div className="relative bg-gray-900 h-[70vh] flex items-center justify-center">
@@ -9,11 +9,11 @@ const HeroSection = () => {
           alt="Restaurant Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90"></div> */}
       </div>
 
       {/* Hero Content */}
-      <div className="relative text-center text-white px-6">
+      {/* <div className="relative text-center text-white px-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
           Welcome to <span className="text-primary">Tipu Pizza kebab</span>
         </h1>
@@ -28,7 +28,7 @@ const HeroSection = () => {
             Book a Table
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
