@@ -1,4 +1,5 @@
-import React from 'react';
+
+import { Link } from 'react-router-dom';
 import aboutImg from '../assets/img/about-1.png';
 const AboutSection = () => {
   return (
@@ -28,12 +29,12 @@ const AboutSection = () => {
           <p className="text-lg text-gray-600 mb-4">
             Whether you're looking for a cozy meal with family or a grand celebration, Delight Bistro is the perfect destination to indulge in great food and warm hospitality.
           </p>
-          <a
-            href="/menu"
+          <Link
+            to="menu"
             className="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-yellow-500 transition"
           >
             Explore Our Menu
-          </a>
+          </Link>
         </div>
       </div>
     </div>

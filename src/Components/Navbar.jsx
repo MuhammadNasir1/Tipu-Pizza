@@ -7,6 +7,7 @@ import {
   FaShoppingCart,
 } from "react-icons/fa";
 import logo from "../assets/img/logo.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -57,30 +58,30 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 mx-auto ">
-            <a
-              href="#home"
+            <Link 
+              to="../"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               Home
-            </a>
-            <a
-              href="#menu"
+            </Link>
+            <Link
+              to="menu"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               Menu
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="about"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               About Us
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="contact"
               className=" hover:text-primary font-semibold text-[20px] capitalize"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="lg:w-[220px] flex justify-end">
             <FaShoppingCart className="hover:text-primary text-3xl" />
@@ -119,36 +120,31 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
-            <a
-              href="#home"
+            <Link
+              to="../"
               className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
               Home
-            </a>
-            <a
-              href="#menu"
+            </Link>
+            <Link
+              to="menu"
               className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
               Menu
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="about"
               className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
               About Us
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="contact"
               className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
               Contact
-            </a>
-            <a
-              href="#reservation"
-              className="block px-4 py-2 bg-yellow-text-primary text-white text-center hover:bg-orange-600"
-            >
-              Book a Table
-            </a>
+            </Link>
+           
           </div>
         )}
       </nav>

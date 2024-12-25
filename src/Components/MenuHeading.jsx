@@ -3,19 +3,7 @@ import { useEffect, useState } from "react";
 import bg from "../assets/img/lg.svg";
 import categoriesData from "../assets/menu.json";
 import defaultImg from "../assets/img/default.jpg";
-// const categories = [
-//   "Kebabs",
-//   "Sizzler Kebabs",
-//   "Pizza",
-//   "Burgers",
-//   "Extras",
-//   "Main Course",
-//   "Desi Karahi & Balties",
-//   "Milk Shakes",
-//   "Cold Drinks",
-//   "Rice / Biryani",
-//   "Gelato Ice Cream",
-// ];
+
 function MenuHeading() {
   const [categories, setCategories] = useState([]);
 
@@ -73,7 +61,7 @@ function MenuHeading() {
           </button>
           <div
             ref={scrollRef}
-            className="flex space-x-4 overflow-x-scroll scrollbar-hide"
+            className="flex  space-x-4 overflow-x-scroll scrollbar-hide"
           >
             {categories.map((category, index) => (
               <a
@@ -141,55 +129,12 @@ function MenuHeading() {
                       </div>
                     </div>
 
-                    {/* img  */}
-
-                    {/* body */}
-                    {/* <div className="flex gap-5 items-center">
-                    <img
-                      className="w-20 h-20 object-cover rounded-full border-primary"
-                      src={defaultImg}
-                      alt=""
-                    />
-                  </div> */}
-                    {/* <div>
-                    <div className="flex gap-4 justify-between w-full">
-                      <h3 className="text-lg font-semibold">{item.name}</h3>
-                      <div className="flex gap-5">
-                        <h2 className="font-semibold text-lg text-black">
-                          £ {item.prices.small}
-                        </h2>
-                        <h2 className="font-semibold text-lg text-primary">
-                          £ {item.prices.large}
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                <p className="mt-3 text-gray-500">{item.description}</p> */}
                   </div>
                 </div>
               ))}
             </div>
           </section>
         ))}
-        {/* {categories.map((category, index) => (
-        <section key={index} id={category}>
-          <div className="relative flex justify-center items-center flex-col">
-            <h2 className="text-white font-semibold absolute top-1/5 left-1/5 -translate-x-1/5 -translate-y-1/5">
-              {category}
-            </h2>
-            <img className="w-full" src={bg} alt="bg" />
-          </div>
-          <div>
-            
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-4 p-4">
-        <data value="
-        "></data>
-
-          </div>
-        </section>
-      ))} */}
       </div>
     </>
   );
